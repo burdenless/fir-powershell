@@ -70,6 +70,9 @@ Function IfPost {
 }
 
 Function Main {
+  #Support for TLSv1.2
+  [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+  
   #Display supplied arguments
   Write-Host "URL: $u"
   Write-Host "Endpoint: $ep"
