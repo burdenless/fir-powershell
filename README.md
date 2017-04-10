@@ -1,2 +1,2 @@
-# fir-powershell
-Fast Incident Response API Client: PowerShell Example
+# FIR PowerShell
+Fast Incident Response API Library implemented in PowerShell

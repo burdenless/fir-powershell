@@ -26,7 +26,7 @@
 
 .EXAMPLE
  powershell -File fir-client.ps1 -u https://<fir-host>.com -t <token> -ep incidents
-   
+
 #>
 
 #---------------------------------------------------------[Initialisations]--------------------------------------------------------
@@ -61,18 +61,10 @@ Function Log-Write
    Add-Content $sLogfile $logstring
 }
 
-Function IfGet {
-
-}
-
-Function IfPost {
-
-}
-
 Function Main {
   #Support for TLSv1.2
   [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-  
+
   #Display supplied arguments
   Write-Host "URL: $u"
   Write-Host "Endpoint: $ep"
